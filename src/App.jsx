@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -7,11 +8,30 @@ import HowItWorks from './components/HowItWorks'
 import Testimonials from './components/Testimonials'
 import CtaFinal from './components/CtaFinal'
 import Footer from './components/Footer'
+import ComingSoon from './components/ComingSoon'
 
 export const WA_LINK = 'https://wa.me/5493815169112'
 export const CALENDLY_LINK = 'https://calendly.com/julietapazcoach'
+const PREVIEW_KEY = 'jp_preview'
+const PREVIEW_SECRET = 'jp2025'
 
 export default function App() {
+  const [preview, setPreview] = useState(() =>
+    localStorage.getItem(PREVIEW_KEY) === PREVIEW_SECRET
+  )
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    if (params.get('preview') === PREVIEW_SECRET) {
+      localStorage.setItem(PREVIEW_KEY, PREVIEW_SECRET)
+      setPreview(true)
+      // Limpiar la URL sin recargar
+      window.history.replaceState({}, '', window.location.pathname)
+    }
+  }, [])
+
+  if (!preview) return <ComingSoon />
+
   return (
     <>
       <Navbar waLink={WA_LINK} calendlyLink={CALENDLY_LINK} />
