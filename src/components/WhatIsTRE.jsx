@@ -22,7 +22,7 @@ export default function WhatIsTRE({ waLink }) {
         </div>
 
         {/* Bloque destacado */}
-        <div style={{
+        <div className="tre-highlight" style={{
           background: 'linear-gradient(135deg, #1fa8b8, #7b52ab)',
           borderRadius: 24,
           padding: '40px 48px',
@@ -52,7 +52,7 @@ export default function WhatIsTRE({ waLink }) {
         </div>
 
         {/* Beneficios */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+        <div className="tre-benefits" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
           {benefits.map(b => (
             <div key={b.title} className="card" style={{ transition: 'transform 0.2s, box-shadow 0.2s' }}
               onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(31,168,184,0.15)' }}
@@ -72,13 +72,6 @@ export default function WhatIsTRE({ waLink }) {
         </div>
       </div>
 
-      <style>{`
-        @media (max-width: 768px) {
-          #tre .card-grid { grid-template-columns: 1fr !important; }
-          #tre > div > div:nth-child(2) { grid-template-columns: 1fr !important; padding: 28px !important; }
-          #tre > div > div:last-child { grid-template-columns: 1fr !important; }
-        }
-      `}</style>
     </section>
   )
 }

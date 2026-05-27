@@ -31,7 +31,7 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+        <div className="testimonials-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
           {testimonials.map(t => (
             <div key={t.name} className="card" style={{ background: 'linear-gradient(160deg, #fdfaf5, #f2ecfa)' }}>
               <div style={{ display: 'flex', gap: 2, marginBottom: 20 }}>
@@ -56,11 +56,6 @@ export default function Testimonials() {
         </div>
       </div>
 
-      <style>{`
-        @media (max-width: 900px) {
-          section > div > div:last-child { grid-template-columns: 1fr !important; }
-        }
-      `}</style>
     </section>
   )
 }

@@ -2,7 +2,7 @@ export default function Footer({ waLink }) {
   return (
     <footer style={{ background: '#2a2438', color: '#9992ab', padding: '60px 24px 32px' }}>
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr', gap: 48, marginBottom: 48 }}>
+        <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr', gap: 48, marginBottom: 48 }}>
           {/* Brand */}
           <div>
             <div style={{ marginBottom: 16 }}>
@@ -46,11 +46,6 @@ export default function Footer({ waLink }) {
         </div>
       </div>
 
-      <style>{`
-        @media (max-width: 768px) {
-          footer > div > div:first-child { grid-template-columns: 1fr !important; gap: 32px !important; }
-        }
-      `}</style>
     </footer>
   )
 }

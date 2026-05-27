@@ -53,7 +53,7 @@ export default function About() {
             Hoy acompaño a personas que quieren soltar las tensiones, el estrés y las cargas acumuladas — para que puedan vivir con más ligereza, claridad y conexión con su ser interior.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+          <div className="about-tags" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
             {[
               { icon: '🌱', text: 'Coaching espiritual' },
               { icon: '🤲', text: 'Terapia TRE' },

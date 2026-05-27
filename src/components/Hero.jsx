@@ -25,7 +25,7 @@ export default function Hero({ waLink, calendlyLink }) {
 
       <div style={{ maxWidth: 1100, margin: '0 auto', width: '100%', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
         {/* Texto */}
-        <div>
+        <div className="hero-content">
           <span className="section-tag">Coach Espiritual · TRE</span>
           <h1 style={{ fontSize: 'clamp(42px, 6vw, 68px)', fontWeight: 400, lineHeight: 1.1, color: '#2a2438', marginBottom: 24 }}>
             Reconectá con<br />
@@ -34,7 +34,7 @@ export default function Hero({ waLink, calendlyLink }) {
           <p style={{ fontSize: 17, lineHeight: 1.75, color: '#5a5470', marginBottom: 40, maxWidth: 460 }}>
             Acompañamiento espiritual y terapia TRE para liberar el estrés, el trauma y las tensiones acumuladas en el cuerpo. Encontrá el equilibrio que merecés.
           </p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14 }}>
+          <div className="hero-btns" style={{ display: 'flex', flexWrap: 'wrap', gap: 14 }}>
             <a href={calendlyLink} target="_blank" rel="noreferrer" className="btn-teal">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
               Agendar sesión

@@ -111,3 +111,48 @@ h1, h2, h3, h4 {
   text-decoration: none;
 }
 .wsp-float:hover { transform: scale(1.1); }
+
+/* ── Responsive global ── */
+@media (max-width: 768px) {
+  section {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+}
+
+/* Hero */
+@media (max-width: 768px) {
+  .hero-content { text-align: center !important; }
+  .hero-btns { justify-content: center !important; }
+}
+
+/* TRE highlight block */
+@media (max-width: 768px) {
+  .tre-highlight {
+    grid-template-columns: 1fr !important;
+    padding: 28px 24px !important;
+  }
+}
+
+/* TRE benefits grid */
+@media (max-width: 900px) {
+  .tre-benefits { grid-template-columns: 1fr 1fr !important; }
+}
+@media (max-width: 540px) {
+  .tre-benefits { grid-template-columns: 1fr !important; }
+}
+
+/* About tags */
+@media (max-width: 480px) {
+  .about-tags { grid-template-columns: 1fr !important; }
+}
+
+/* Testimonials */
+@media (max-width: 900px) {
+  .testimonials-grid { grid-template-columns: 1fr !important; }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+}
