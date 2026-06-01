@@ -50,7 +50,7 @@ export default function About() {
             Soy coach espiritual certificada y practicante de TRE (Terapia de Respuesta). Mi camino comenzó cuando encontré en estas herramientas una forma profunda de sanar y reconectar conmigo misma.
           </p>
           <p style={{ fontSize: 16, lineHeight: 1.85, color: '#5a5470', marginBottom: 32 }}>
-            Hoy acompaño a personas que quieren soltar las tensiones, el estrés y las cargas acumuladas — para que puedan vivir con más ligereza, claridad y conexión con su ser interior.
+            Hoy acompaño a personas que quieren soltar las tensiones, el estrés y las cargas acumuladas, para que puedan vivir con más ligereza, claridad y conexión con su ser interior.
           </p>
 
           <div className="about-tags" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>

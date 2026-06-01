@@ -1,7 +1,7 @@
 export default function HowItWorks() {
   const steps = [
     { n: '01', title: 'Primera consulta gratuita', desc: 'Nos conocemos en una videollamada o chat de WhatsApp. Me contás lo que estás atravesando y yo te explico cómo puedo acompañarte.', color: '#1fa8b8' },
-    { n: '02', title: 'Diseñamos tu proceso', desc: 'Juntos definimos qué herramienta es la más adecuada para vos — TRE, coaching espiritual o una combinación de ambas.', color: '#7b52ab' },
+    { n: '02', title: 'Diseñamos tu proceso', desc: 'Juntos definimos qué herramienta es la más adecuada para vos: TRE, coaching espiritual o una combinación de ambas.', color: '#7b52ab' },
     { n: '03', title: 'Empezamos a trabajar', desc: 'Comenzamos las sesiones a tu ritmo. Cada encuentro está diseñado para que salgas con más claridad, ligereza y conexión.', color: '#c9a96e' },
     { n: '04', title: 'Transformación sostenida', desc: 'Te enseño herramientas que podés usar de forma autónoma. El bienestar no depende solo de las sesiones, sino de lo que integrás en tu vida.', color: '#1fa8b8' },
   ]

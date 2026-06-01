@@ -17,7 +17,7 @@ export default function WhatIsTRE({ waLink }) {
             ¿Qué es la <span style={{ color: '#1fa8b8' }}>Terapia de Respuesta</span>?
           </h2>
           <p style={{ fontSize: 16, lineHeight: 1.8, color: '#5a5470', maxWidth: 680, margin: '0 auto' }}>
-            TRE (Tension & Trauma Releasing Exercises) es una técnica que activa el mecanismo natural del cuerpo para liberar tensiones profundas, estrés crónico y traumas — a través de vibraciones que el propio sistema nervioso genera.
+            TRE (Tension & Trauma Releasing Exercises) es una técnica que activa el mecanismo natural del cuerpo para liberar tensiones profundas, estrés crónico y traumas, a través de vibraciones que el propio sistema nervioso genera.
           </p>
         </div>
 
