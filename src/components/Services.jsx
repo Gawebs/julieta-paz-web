@@ -1,29 +1,36 @@
-export default function Services({ calendlyLink }) {
+export default function Services({ waLink }) {
   const services = [
     {
-      icon: '🌿',
-      title: 'Sesión individual TRE',
-      desc: 'Una sesión personal donde guío tu cuerpo para activar el mecanismo de liberación de tensiones. Incluye contención y seguimiento.',
-      features: ['60-90 minutos', 'Presencial u online', 'Primera sesión de exploración sin costo'],
+      tag: 'Sesión individual',
+      title: 'Terapia de Respuesta Espiritual',
+      desc: 'Trabajamos con tu Yo Superior para identificar y liberar los bloqueos energéticos, creencias limitantes y programas del alma que están detrás de lo que repetís — en tus vínculos, tu salud, tu bienestar, tu vida.',
+      meta: 'Online · Zoom · 2 horas aprox. · Individual',
       color: '#1fa8b8',
       bg: '#e8f7f9',
+      icon: '✨',
     },
     {
-      icon: '✨',
-      title: 'Acompañamiento de coaching espiritual',
-      desc: 'Un proceso de 4 a 8 semanas para trabajar en profundidad tu bienestar interior, propósito y conexión espiritual.',
-      features: ['Sesiones semanales', 'Material de apoyo', 'Seguimiento entre sesiones'],
+      tag: 'Talleres grupales',
+      title: 'Método Conexión',
+      desc: 'Un espacio de transformación donde integrás cuerpo, mente, alma y espíritu. Cada encuentro es una experiencia completa — no una charla, un proceso vivencial.',
+      meta: 'Presencial: 1 vez al mes · 5 hs\nOnline — Programa Conexión 360: 5 semanas por Zoom · 2 hs por encuentro · Grupo WhatsApp + tareas diarias',
       color: '#7b52ab',
       bg: '#f2ecfa',
       featured: true,
+      icon: '🌀',
     },
     {
-      icon: '🤝',
-      title: 'Taller grupal TRE',
-      desc: 'Vivencia colectiva de TRE en un espacio seguro y acompañado. Ideal para quienes prefieren el proceso en comunidad.',
-      features: ['Grupos reducidos (máx. 8 personas)', 'Presencial', 'Calendario mensual'],
+      tag: 'Formación',
+      title: 'Formación en TRE',
+      desc: 'Para cualquier persona que quiera transformarse y aprender a acompañar a otros. No necesitás experiencia previa — solo ganas de crecer y de ser herramienta de cambio.',
+      niveles: [
+        { label: 'Nivel 1', desc: 'Transformación para vos', dur: '3 meses' },
+        { label: 'Nivel 2', desc: 'Facilitar a otro', dur: '3 meses' },
+        { label: 'Especialización', desc: 'Chakras aplicada a TRE', dur: 'Avanzado' },
+      ],
       color: '#c9a96e',
       bg: '#f5eedf',
+      icon: '🌱',
     },
   ]
 
@@ -32,11 +39,11 @@ export default function Services({ calendlyLink }) {
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: 64 }}>
           <span className="section-tag">Servicios</span>
-          <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 'clamp(36px, 4vw, 52px)', fontWeight: 400, color: '#2a2438', marginBottom: 16 }}>
-            ¿Cómo puedo acompañarte?
+          <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 'clamp(36px, 4vw, 52px)', fontWeight: 400, color: '#2a2438', marginBottom: 12 }}>
+            ¿Con qué te puedo acompañar?
           </h2>
-          <p style={{ fontSize: 16, color: '#5a5470', maxWidth: 520, margin: '0 auto' }}>
-            Cada persona es única. Por eso ofrezco diferentes formatos para que encuentres el que mejor se adapta a vos.
+          <p style={{ fontSize: 16, color: '#5a5470' }}>
+            Tres caminos, según dónde estés y qué necesitás.
           </p>
         </div>
 
@@ -49,33 +56,40 @@ export default function Services({ calendlyLink }) {
               background: '#fff',
               transform: s.featured ? 'scale(1.03)' : 'none',
               boxShadow: s.featured ? `0 20px 60px ${s.color}25` : '0 4px 20px rgba(0,0,0,0.06)',
-              position: 'relative',
             }}>
               {s.featured && (
-                <div style={{ background: `linear-gradient(90deg, ${s.color}, #c9a96e)`, padding: '8px', textAlign: 'center', color: '#fff', fontFamily: 'DM Sans, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.1em' }}>
+                <div style={{ background: `linear-gradient(90deg, ${s.color}, #1fa8b8)`, padding: '8px', textAlign: 'center', color: '#fff', fontSize: 12, fontWeight: 700, letterSpacing: '0.1em' }}>
                   MÁS ELEGIDO
                 </div>
               )}
               <div style={{ padding: '32px 28px' }}>
-                <div style={{ width: 56, height: 56, borderRadius: 16, background: s.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 26, marginBottom: 20 }}>
+                <div style={{ width: 52, height: 52, borderRadius: 16, background: s.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24, marginBottom: 16 }}>
                   {s.icon}
                 </div>
-                <h3 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 24, fontWeight: 500, color: '#2a2438', marginBottom: 12, lineHeight: 1.2 }}>{s.title}</h3>
-                <p style={{ fontSize: 14, lineHeight: 1.8, color: '#5a5470', marginBottom: 24 }}>{s.desc}</p>
-                <div style={{ display: 'grid', gap: 8, marginBottom: 28 }}>
-                  {s.features.map(f => (
-                    <div key={f} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 13, color: '#2a2438' }}>
-                      <div style={{ width: 6, height: 6, borderRadius: '50%', background: s.color, flexShrink: 0 }} />
-                      {f}
-                    </div>
-                  ))}
-                </div>
-                <a href={calendlyLink} target="_blank" rel="noreferrer"
-                  style={{ display: 'block', textAlign: 'center', padding: '12px 20px', borderRadius: 12, border: `2px solid ${s.color}`, color: s.featured ? '#fff' : s.color, background: s.featured ? s.color : 'transparent', fontFamily: 'DM Sans, sans-serif', fontWeight: 600, fontSize: 14, textDecoration: 'none', transition: 'all 0.2s' }}
-                  onMouseOver={e => { e.target.style.background = s.color; e.target.style.color = '#fff' }}
-                  onMouseOut={e => { if (!s.featured) { e.target.style.background = 'transparent'; e.target.style.color = s.color } }}
+                <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', color: s.color, textTransform: 'uppercase', marginBottom: 8 }}>{s.tag}</p>
+                <h3 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 24, fontWeight: 500, color: '#2a2438', marginBottom: 16, lineHeight: 1.2 }}>{s.title}</h3>
+                <p style={{ fontSize: 14, lineHeight: 1.8, color: '#5a5470', marginBottom: 20 }}>{s.desc}</p>
+
+                {s.meta && (
+                  <p style={{ fontSize: 12, color: '#9992ab', lineHeight: 1.7, marginBottom: 24, whiteSpace: 'pre-line' }}>{s.meta}</p>
+                )}
+
+                {s.niveles && (
+                  <div style={{ marginBottom: 24 }}>
+                    {s.niveles.map(n => (
+                      <div key={n.label} style={{ display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 10, alignItems: 'center', padding: '8px 0', borderBottom: '1px solid #f0f0f0' }}>
+                        <span style={{ fontSize: 12, fontWeight: 700, color: s.color }}>{n.label}</span>
+                        <span style={{ fontSize: 13, color: '#2a2438' }}>{n.desc}</span>
+                        <span style={{ fontSize: 12, color: '#9992ab' }}>{n.dur}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                <a href={waLink} target="_blank" rel="noreferrer"
+                  style={{ display: 'block', textAlign: 'center', padding: '12px 20px', borderRadius: 12, border: `2px solid ${s.color}`, color: s.featured ? '#fff' : s.color, background: s.featured ? s.color : 'transparent', fontFamily: 'DM Sans, sans-serif', fontWeight: 600, fontSize: 14, textDecoration: 'none' }}
                 >
-                  Quiero saber más
+                  Consultá por WhatsApp →
                 </a>
               </div>
             </div>

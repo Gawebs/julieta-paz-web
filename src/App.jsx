@@ -1,9 +1,8 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import EspejoDolor from './components/EspejoDolor'
 import About from './components/About'
-import WhatIsTRE from './components/WhatIsTRE'
 import Services from './components/Services'
-import HowItWorks from './components/HowItWorks'
 import Testimonials from './components/Testimonials'
 import CtaFinal from './components/CtaFinal'
 import Footer from './components/Footer'
@@ -24,12 +23,11 @@ export default function App() {
       <Navbar waLink={WA_LINK} calendlyLink={CALENDLY_LINK} />
       <main>
         <Hero waLink={WA_LINK} calendlyLink={CALENDLY_LINK} />
+        <EspejoDolor />
         <About />
-        <WhatIsTRE waLink={WA_LINK} />
-        <Services calendlyLink={CALENDLY_LINK} />
-        <HowItWorks />
+        <Services waLink={WA_LINK} />
         <Testimonials />
-        <CtaFinal waLink={WA_LINK} calendlyLink={CALENDLY_LINK} />
+        <CtaFinal waLink={WA_LINK} />
       </main>
       <Footer waLink={WA_LINK} />
 
