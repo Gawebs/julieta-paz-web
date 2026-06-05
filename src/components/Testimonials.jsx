@@ -35,11 +35,11 @@ export default function Testimonials() {
         </div>
 
         {/* Foto grupal */}
-        <div style={{ marginBottom: 56, borderRadius: 24, overflow: 'hidden', boxShadow: '0 8px 40px rgba(0,0,0,0.10)', maxHeight: 420 }}>
+        <div style={{ marginBottom: 56, borderRadius: 24, overflow: 'hidden', boxShadow: '0 8px 40px rgba(0,0,0,0.10)' }}>
           <img
             src="/grupo-taller.jpg"
             alt="Participantes del taller Método Conexión"
-            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', display: 'block' }}
+            style={{ width: '100%', display: 'block' }}
           />
         </div>
 
