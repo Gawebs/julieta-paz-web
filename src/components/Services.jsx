@@ -3,7 +3,7 @@ export default function Services({ waLink }) {
     {
       tag: 'Sesión individual',
       title: 'Terapia de Respuesta Espiritual',
-      desc: 'Trabajamos con tu Yo Superior para identificar y liberar los bloqueos energéticos, creencias limitantes y programas del alma que están detrás de lo que repetís — en tus vínculos, tu salud, tu bienestar, tu vida.',
+      desc: 'Trabajamos con tu Yo Superior para identificar y liberar los bloqueos energéticos, creencias limitantes y programas del alma que están detrás de lo que repetís: en tus vínculos, tu salud, tu bienestar, tu vida.',
       meta: 'Online · Zoom · 2 horas aprox. · Individual',
       color: '#1fa8b8',
       bg: '#e8f7f9',
@@ -12,7 +12,7 @@ export default function Services({ waLink }) {
     {
       tag: 'Talleres grupales',
       title: 'Método Conexión',
-      desc: 'Un espacio de transformación donde integrás cuerpo, mente, alma y espíritu. Cada encuentro es una experiencia completa — no una charla, un proceso vivencial.',
+      desc: 'Un espacio de transformación donde integrás cuerpo, mente, alma y espíritu. Cada encuentro es una experiencia completa, no una charla, un proceso vivencial.',
       meta: 'Presencial: 1 vez al mes · 5 hs\nOnline — Programa Conexión 360: 5 semanas por Zoom · 2 hs por encuentro · Grupo WhatsApp + tareas diarias',
       color: '#7b52ab',
       bg: '#f2ecfa',
@@ -22,7 +22,7 @@ export default function Services({ waLink }) {
     {
       tag: 'Formación',
       title: 'Formación en TRE',
-      desc: 'Para cualquier persona que quiera transformarse y aprender a acompañar a otros. No necesitás experiencia previa — solo ganas de crecer y de ser herramienta de cambio.',
+      desc: 'Para cualquier persona que quiera transformarse y aprender a acompañar a otros. No necesitás experiencia previa, solo ganas de crecer y de ser herramienta de cambio.',
       niveles: [
         { label: 'Nivel 1', desc: 'Transformación para vos', dur: '3 meses' },
         { label: 'Nivel 2', desc: 'Facilitar a otro', dur: '3 meses' },

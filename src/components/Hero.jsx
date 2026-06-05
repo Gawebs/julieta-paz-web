@@ -35,7 +35,7 @@ export default function Hero({ waLink, calendlyLink }) {
             <span style={{ color: '#7b52ab' }}>Cuando todo se derrumba, algo nuevo puede nacer.</span>
           </h1>
           <p style={{ fontSize: 17, lineHeight: 1.75, color: '#5a5470', marginBottom: 32, maxWidth: 460 }}>
-            Acompaño a personas en crisis profunda a soltar lo que las tiene atadas — en el cuerpo, en la mente y en el alma — para que puedan volver a ser ellas mismas, integrando las cuatro dimensiones del ser.
+            Acompaño a personas en crisis profunda a soltar lo que las tiene atadas, en el cuerpo, en la mente y en el alma, para que puedan volver a ser ellas mismas, integrando las cuatro dimensiones del ser.
           </p>
           {/* Pilares */}
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginBottom: 36 }}>

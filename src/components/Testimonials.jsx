@@ -9,14 +9,14 @@ const testimonials = [
   {
     tag: 'Taller Método Conexión',
     quote: 'Antes: indecisa e insegura. Ahora: plena, renovada, con seguridad.',
-    desc: 'Lo que más cambió fue su forma de mirar hacia adelante — hacia una vida próspera y abundante.',
+    desc: 'Lo que más cambió fue su forma de mirar hacia adelante, hacia una vida próspera y abundante.',
     source: 'Participante · Método Conexión',
     color: '#7b52ab',
   },
   {
     tag: 'Formación TRE',
     quote: 'Esto era para mí. Es una puerta a todo.',
-    desc: 'Al principio costó. Pero después se apoderó — y lo que encontró adentro fue paz, armonía y un camino completamente propio.',
+    desc: 'Al principio costó. Pero después se apoderó, y lo que encontró adentro fue paz, armonía y un camino completamente propio.',
     source: 'Alumna · Formación Nivel 1',
     color: '#c9a96e',
   },
@@ -32,6 +32,15 @@ export default function Testimonials() {
             Lo que dicen quienes ya dieron el paso
           </h2>
           <p style={{ fontSize: 16, color: '#5a5470' }}>En sus propias palabras.</p>
+        </div>
+
+        {/* Foto grupal */}
+        <div style={{ marginBottom: 56, borderRadius: 24, overflow: 'hidden', boxShadow: '0 8px 40px rgba(0,0,0,0.10)', maxHeight: 420 }}>
+          <img
+            src="/grupo-taller.jpg"
+            alt="Participantes del taller Método Conexión"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
+          />
         </div>
 
         <div className="testimonials-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>

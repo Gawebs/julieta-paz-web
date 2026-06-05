@@ -26,7 +26,7 @@ export default function CtaFinal({ waLink }) {
           </h2>
 
           <p style={{ fontSize: 16, lineHeight: 1.8, opacity: 0.9, maxWidth: 520, margin: '0 auto 40px', position: 'relative' }}>
-            No hace falta tener todo claro. Solo hace falta dar el primer paso. Escribime y charlamos sin compromiso — juntas vemos por dónde empezar.
+            No hace falta tener todo claro. Solo hace falta dar el primer paso. Escribime y charlamos sin compromiso, juntas vemos por dónde empezar.
           </p>
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, justifyContent: 'center', position: 'relative' }}>

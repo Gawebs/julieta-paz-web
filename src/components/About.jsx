@@ -25,7 +25,7 @@ export default function About() {
               background: 'linear-gradient(160deg, #e8f7f9, #f2ecfa)',
             }}>
               <img
-                src="/julieta.jpg"
+                src="/julieta-evento.jpg"
                 alt="Julieta Paz"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
                 onError={e => { e.target.style.display = 'none' }}
@@ -45,7 +45,7 @@ export default function About() {
             A los veinte y pico estaba muy perdida. Rebelde, llena de dolor, sin saber quién era ni por qué me pasaba lo que me pasaba. Hasta que caí en un lugar tan oscuro que me dije: esto no puede seguir así.
           </p>
           <p style={{ fontSize: 16, lineHeight: 1.85, color: '#5a5470', marginBottom: 32 }}>
-            Desde ahí empecé a buscar. Recorrí muchos caminos, aprendí muchas herramientas, viví en mi propio cuerpo lo que hoy acompaño en otros. Ese recorrido no fue en línea recta — y por eso entiendo cuando el tuyo tampoco lo es.
+            Desde ahí empecé a buscar. Recorrí muchos caminos, aprendí muchas herramientas, viví en mi propio cuerpo lo que hoy acompaño en otros. Ese recorrido no fue en línea recta, y por eso entiendo cuando el tuyo tampoco lo es.
           </p>
 
           {/* Frase destacada */}
@@ -55,7 +55,7 @@ export default function About() {
             marginBottom: 32,
           }}>
             <p style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 20, lineHeight: 1.6, color: '#2a2438', fontWeight: 500, margin: 0 }}>
-              Lo que me diferencia no es una sola técnica. Es la capacidad de ver el panorama completo — el cuerpo, la mente, el alma y el espíritu — y trabajar desde ahí.
+              Lo que me diferencia no es una sola técnica. Es la capacidad de ver el panorama completo: el cuerpo, la mente, el alma y el espíritu, y trabajar desde ahí.
             </p>
           </div>
 
@@ -89,7 +89,7 @@ export default function About() {
             padding: '20px 24px',
           }}>
             <p style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 18, lineHeight: 1.6, color: '#2a2438', margin: 0, fontStyle: 'italic' }}>
-              Acompaño a cada persona a recordar que no es solo un humano con problemas — es un ser infinito que está teniendo una experiencia humana.
+              Acompaño a cada persona a recordar que no es solo un humano con problemas, es un ser infinito que está teniendo una experiencia humana.
             </p>
             <p style={{ fontSize: 13, color: '#7b52ab', fontWeight: 600, marginTop: 12, marginBottom: 0 }}>
               Soy Julieta Paz · Coach Espiritual y Formadora en TRE
