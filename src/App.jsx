@@ -6,17 +6,10 @@ import Services from './components/Services'
 import Testimonials from './components/Testimonials'
 import CtaFinal from './components/CtaFinal'
 import Footer from './components/Footer'
-import ComingSoon from './components/ComingSoon'
-
 export const WA_LINK = 'https://wa.me/5493815169112'
 export const CALENDLY_LINK = 'https://calendly.com/julietapazcoach'
 
-// "Próximamente" solo en el dominio público — en Vercel y localhost se ve el sitio completo
-const PUBLIC_DOMAIN = 'julietapazcoach.com'
-const isPublicDomain = typeof window !== 'undefined' && window.location.hostname === PUBLIC_DOMAIN
-
 export default function App() {
-  if (isPublicDomain) return <ComingSoon />
 
   return (
     <>
