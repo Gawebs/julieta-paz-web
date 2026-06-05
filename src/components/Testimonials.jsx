@@ -39,7 +39,7 @@ export default function Testimonials() {
           <img
             src="/grupo-taller.jpg"
             alt="Participantes del taller Método Conexión"
-            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', display: 'block' }}
           />
         </div>
 
