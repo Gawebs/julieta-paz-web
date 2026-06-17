@@ -34,9 +34,8 @@ export default function Navbar({ waLink, calendlyLink }) {
     >
       <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 72 }}>
         {/* Logo */}
-        <a href="#inicio" style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', lineHeight: 1 }}>
-          <span style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 22, fontWeight: 500, color: '#1fa8b8', letterSpacing: '-0.3px' }}>Julieta</span>
-          <span style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 22, fontStyle: 'italic', fontWeight: 400, color: '#c9a96e', marginTop: -4 }}>Paz</span>
+        <a href="#inicio" style={{ textDecoration: 'none' }}>
+          <img src="/logo.png" alt="Julieta Paz" style={{ height: 56, width: 'auto', display: 'block' }} />
         </a>
 
         {/* Desktop nav */}
