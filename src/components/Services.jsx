@@ -22,15 +22,15 @@ export default function Services({ waLink }) {
     {
       tag: 'Formación',
       title: 'Formación en TRE',
-      desc: 'Para cualquier persona que quiera transformarse y aprender a acompañar a otros. No necesitás experiencia previa, solo ganas de crecer y de ser herramienta de cambio.',
+      desc: 'Para cualquier persona que quiera transformarse y aprender a acompañar a otros desde una perspectiva cósmica. No necesitás experiencia previa, solo ganas de crecer y de ser herramienta de cambio.',
       niveles: [
-        { label: 'Nivel 1', desc: 'Transformación para vos', dur: '3 meses' },
-        { label: 'Nivel 2', desc: 'Facilitar a otro', dur: '3 meses' },
+        { label: 'Nivel 1', desc: 'Técnica básica - Transformación para vos', dur: '3 meses' },
+        { label: 'Nivel 2', desc: 'Facilitador', dur: '3 meses' },
         { label: 'Especialización', desc: 'Chakras aplicada a TRE', dur: 'Avanzado' },
       ],
       color: '#c9a96e',
       bg: '#f5eedf',
-      icon: '🌱',
+      icon: '🎓',
     },
   ]
 

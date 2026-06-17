@@ -56,7 +56,7 @@ export default function Hero({ waLink, calendlyLink }) {
             </a>
           </div>
           <p style={{ marginTop: 28, fontSize: 13, color: '#9992ab' }}>
-            ✦ Primera consulta sin costo &nbsp;·&nbsp; Sesiones presenciales y online
+            ✦ Consultá sin compromiso &nbsp;·&nbsp; Talleres presenciales · Sesiones online
           </p>
         </div>
 
