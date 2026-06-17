@@ -30,12 +30,13 @@ export default function Navbar({ waLink, calendlyLink }) {
         borderBottom: scrolled ? '1px solid #f0ece4' : 'none',
         transition: 'all 0.3s ease',
         padding: '0 24px',
+        height: 100,
       }}
     >
-      <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 72 }}>
+      <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 100 }}>
         {/* Logo */}
         <a href="#inicio" style={{ textDecoration: 'none' }}>
-          <img src="/logo.png" alt="Julieta Paz" style={{ height: 70, width: 'auto', display: 'block' }} />
+          <img src="/logo.png" alt="Julieta Paz" style={{ height: 80, width: 'auto', display: 'block' }} />
         </a>
 
         {/* Desktop nav */}
